@@ -1,5 +1,7 @@
 <template>
   <v-app>
+    <NavMobilePanel />
+    <Header />
     <v-main class="app">
       <router-view v-slot="{ Component }">
         <component :is="Component" />
@@ -7,6 +9,19 @@
     </v-main>
   </v-app>
 </template>
+
+<script lang="ts">
+import Vue from 'vue';
+import Header from "./components/Layout/Header/index.vue";
+import NavMobilePanel from "./components/Layout/Header/Nav/NavMobilePanel/index.vue";
+export default Vue.extend({
+  name: "App",
+  components: {
+    Header,
+    NavMobilePanel,
+  },
+});
+</script>
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Roboto:wght@300;400;500&display=swap");
