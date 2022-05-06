@@ -1,0 +1,11 @@
+.heading {
+    &__container {
+        width: 100vw;
+        height: 800px;
+        background-size: cover;
+        background-image: url("../../../assets/headingBg.jpg");
+        background-color: #818181;
+        background-blend-mode: soft-light;
+        color: white;
+    }
+}

@@ -1,5 +1,8 @@
 <template>
   <div>
+    <HeadingBlock />
+    <ControlsBlock />
+      <FeedbackBlock />
   </div>
 </template>
 
