@@ -2,7 +2,6 @@
   <v-navigation-drawer
     v-model="isMobMenuVisible"
     app
-    absolute
     temporary
     style="z-index: 10000"
   >

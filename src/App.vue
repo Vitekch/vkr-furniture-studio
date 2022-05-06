@@ -3,9 +3,9 @@
     <NavMobilePanel />
     <Header />
     <v-main class="app">
-      <router-view v-slot="{ Component }">
-        <component :is="Component" />
-      </router-view>
+      <transition name="fast-fade" mode="out-in">
+        <router-view />
+      </transition>
     </v-main>
   </v-app>
 </template>
@@ -55,13 +55,35 @@ export default Vue.extend({
   width: 100%;
 }
 
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 0.1s ease;
+.fast-fade {
+  &-enter-active,
+  &-leave-active {
+    transition: opacity 0.2s ease;
+  }
+
+  &-enter-from,
+  &-leave-to {
+    opacity: 0;
+  }
 }
 
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
+.slow-fade {
+  &-enter-active {
+    transition: opacity 0.7s ease-out;
+    transition-delay: 1s;
+  }
+  &-leave-active {
+    transition: opacity 0.7s ease-out;
+  }
+
+  &-enter-to,
+  &-leave {
+    opacity: 1;
+  }
+
+  &-enter,
+  &-leave-to {
+    opacity: 0;
+  }
 }
 </style>
