@@ -2,7 +2,7 @@
   <div>
     <HeadingBlock />
     <ControlsBlock />
-      <FeedbackBlock />
+    <FeedbackBlock />
   </div>
 </template>
 

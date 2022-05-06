@@ -7,7 +7,7 @@
       >
         <v-col
           md="4"
-          sm="12"
+          cols="12"
           v-for="(feedback) in feedbacks"
           :key="feedback.username"
           class="d-flex justify-center"
