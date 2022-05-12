@@ -7,16 +7,16 @@ const items = [
   { icon: "mdi-teddy-bear", text: "Детские", to: "/furniture/nursery" },
   { icon: "mdi-countertop", text: "Кухни", to: "/furniture/kitchen" },
   { icon: "mdi-wardrobe", text: "Прихожие", to: "/furniture/hallway" },
+  { text: "_____________________________________", to: "", disabled: true },
   {
     icon: "mdi-pencil-ruler",
     text: "Индивидуальный дизайн-проект",
-    to: "/living-room",
+    to: "/services/original-design",
   },
-  { icon: "mdi-ruler", text: "Замер помещения", to: "/bedroom" },
   {
     icon: "mdi-briefcase-check",
     text: "Дизайн-проекты типовых квартир",
-    to: "/nursery",
+    to: "/services/design-projects",
   },
 ];
 

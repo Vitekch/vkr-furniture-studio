@@ -8,4 +8,12 @@ export default Vue.extend({
     NavButtons,
     NavButtonMobile,
   },
+  methods: {
+    scrollTop() {
+      window.scroll({
+        top: 0,
+        behavior: "smooth",
+      });
+    },
+  },
 });

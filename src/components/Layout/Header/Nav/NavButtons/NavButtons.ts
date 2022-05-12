@@ -13,13 +13,12 @@ const serviceTypes = [
   {
     icon: "mdi-pencil-ruler",
     text: "Индивидуальный дизайн-проект",
-    to: "/living-room",
+    to: "/services/original-design",
   },
-  { icon: "mdi-ruler", text: "Замер помещения", to: "/bedroom" },
   {
     icon: "mdi-briefcase-check",
     text: "Дизайн-проекты типовых квартир",
-    to: "/nursery",
+    to: "/services/design-projects",
   },
 ];
 
@@ -40,6 +39,10 @@ export default Vue.extend({
     },
     changePath(path: string) {
       this.$router.push(path);
+      window.scroll({
+        top: 0,
+        behavior: "smooth",
+      });
     },
   },
 });

@@ -6,9 +6,11 @@
       link
       :to="item.to"
       :width="width"
+      @click="scrollTop"
       dense
+      :disabled="item.disabled ? item.disabled : false"
     >
-      <v-list-item-icon>
+      <v-list-item-icon v-if="item.icon">
         <v-icon>{{ item.icon || "" }}</v-icon>
       </v-list-item-icon>
       <v-list-item-content>

@@ -1,7 +1,7 @@
 <template>
   <v-app-bar app dense>
     <v-container class="d-flex align-center">
-      <div>
+      <div @click="scrollTop">
         <router-link to="/" class="logo">
           Little Furniture Studio
           <div class="underline"></div>

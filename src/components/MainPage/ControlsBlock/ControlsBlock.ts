@@ -5,6 +5,7 @@ export default Vue.extend({
   methods: {
     changePath(path: string) {
       this.$router.push(path);
+      window.scroll({top: 0, behavior: "smooth"});
     },
   },
 });

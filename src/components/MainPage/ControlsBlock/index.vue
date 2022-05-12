@@ -6,11 +6,14 @@
       dark
       class="d-flex justify-center align-center control__container"
     >
-      <a class="control__link" @click="changePath('/design')">
+      <a class="control__link" @click="changePath('/services/original-design')">
         Услуги дизайнера
         <div class="underline"></div>
       </a>
-      <a class="control__link mx-15" @click="changePath('/design2')">
+      <a
+        class="control__link mx-15"
+        @click="changePath('/services/design-projects')"
+      >
         Готовые дизайн-проекты
         <div class="underline"></div>
       </a>
