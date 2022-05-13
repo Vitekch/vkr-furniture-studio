@@ -2,11 +2,11 @@ import Vue from "vue";
 import NavList from "../NavList/index.vue";
 
 const furnitureTypes = [
-  { icon: "mdi-sofa", text: "Гостиные", to: "/furniture/living-room" },
-  { icon: "mdi-bed-king", text: "Спальни", to: "/furniture/bedroom" },
-  { icon: "mdi-teddy-bear", text: "Детские", to: "/furniture/nursery" },
-  { icon: "mdi-countertop", text: "Кухни", to: "/furniture/kitchen" },
-  { icon: "mdi-wardrobe", text: "Прихожие", to: "/furniture/hallway" },
+  { icon: "mdi-sofa", text: "Гостиные", to: "/catalog/living-room" },
+  { icon: "mdi-bed-king", text: "Спальни", to: "/catalog/bedroom" },
+  { icon: "mdi-teddy-bear", text: "Детские", to: "/catalog/nursery" },
+  { icon: "mdi-countertop", text: "Кухни", to: "/catalog/kitchen" },
+  { icon: "mdi-wardrobe", text: "Прихожие", to: "/catalog/hallway" },
 ];
 
 const serviceTypes = [
@@ -35,6 +35,7 @@ export default Vue.extend({
   },
   methods: {
     switchMenuState(menuState: boolean) {
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       menuState = menuState ? false : true;
     },
     changePath(path: string) {
