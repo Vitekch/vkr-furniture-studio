@@ -1,7 +1,7 @@
 <template>
   <div style="height: 100%">
     <Sidebar />
-    <v-container> sss </v-container>
+    <CatalogContainer :category="category" />
   </div>
 </template>
 

@@ -4,9 +4,7 @@ import NavList from "../NavList/index.vue";
 const furnitureTypes = [
   { icon: "mdi-sofa", text: "Гостиные", to: "/catalog/living-room" },
   { icon: "mdi-bed-king", text: "Спальни", to: "/catalog/bedroom" },
-  { icon: "mdi-teddy-bear", text: "Детские", to: "/catalog/nursery" },
   { icon: "mdi-countertop", text: "Кухни", to: "/catalog/kitchen" },
-  { icon: "mdi-wardrobe", text: "Прихожие", to: "/catalog/hallway" },
 ];
 
 const serviceTypes = [

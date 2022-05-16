@@ -17,7 +17,7 @@
         Готовые дизайн-проекты
         <div class="underline"></div>
       </a>
-      <a class="control__link" @click="changePath('/design3')">
+      <a class="control__link" @click="changePath('/catalog/living-room')">
         Каталог
         <div class="underline"></div>
       </a>
