@@ -2,11 +2,9 @@ import Vue from "vue";
 import NavList from "../NavList/index.vue";
 
 const items = [
-  { icon: "mdi-sofa", text: "Гостиные", to: "/furniture/living-room" },
-  { icon: "mdi-bed-king", text: "Спальни", to: "/furniture/bedroom" },
-  { icon: "mdi-teddy-bear", text: "Детские", to: "/furniture/nursery" },
-  { icon: "mdi-countertop", text: "Кухни", to: "/furniture/kitchen" },
-  { icon: "mdi-wardrobe", text: "Прихожие", to: "/furniture/hallway" },
+  { icon: "mdi-sofa", text: "Гостиные", to: "/catalog/living-room" },
+  { icon: "mdi-bed-king", text: "Спальни", to: "/catalog/bedroom" },
+  { icon: "mdi-countertop", text: "Кухни", to: "/catalog/kitchen" },
   { text: "_____________________________________", to: "", disabled: true },
   {
     icon: "mdi-pencil-ruler",

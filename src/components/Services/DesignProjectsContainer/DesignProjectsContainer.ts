@@ -4,7 +4,8 @@ import DesignProjectCard from "./DesignProjectCard/index.vue";
 const cardsData = [
   {
     id: 1,
-    description: "Дизайн-проек тs dddddddd sss ddsgdsss sdf saas блаблаблабла бла",
+    description:
+      "Дизайн-проек тs dddddddd sss ddsgdsss sdf saas блаблаблабла бла",
   },
   {
     id: 2,
