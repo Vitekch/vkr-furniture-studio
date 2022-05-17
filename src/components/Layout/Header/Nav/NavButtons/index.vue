@@ -24,9 +24,9 @@
       <NavList :items="serviceTypes" :width="350" />
     </v-menu>
 
-    <v-btn text small class="ml-1" @click="changePath('/about-us')">
+    <!-- <v-btn text small class="ml-1" @click="changePath('/about-us')">
       О нас
-    </v-btn>
+    </v-btn> -->
     <v-btn text small class="ml-1" @click="changePath('/contact-us')">
       Связаться с нами
     </v-btn>
