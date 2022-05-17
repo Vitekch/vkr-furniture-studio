@@ -1,8 +1,10 @@
 <template>
   <v-container>
     <v-card class="pa-5">
-      <CatalogList :items="catalog"/>
+      <CatalogList :items="catalog" />
     </v-card>
+    <SetOrder />
+    <ItemDescription />
   </v-container>
 </template>
 

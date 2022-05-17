@@ -1,5 +1,7 @@
 import Vue from "vue";
 import CatalogList from "./CatalogList/index.vue";
+import SetOrder from "@/components/Modals/Catalog/SetOrder/index.vue";
+import ItemDescription from "@/components/Modals/Catalog/ItemDescription/index.vue";
 
 const items = [
   {
@@ -7,35 +9,49 @@ const items = [
     items: [
       {
         id: 1,
-        name: "Стул"
+        name: "Стул",
+        description: "aaaaaaaaaaa",
+        img: "https://imodern.ru/upload/iblock/d96/d962dd18dbc57458c16e4fac2933f2bf.jpg",
       },
       {
         id: 2,
-        name: "Стул1"
+        name: "Стул1",
+        description: "aaaaaaaaaasa",
+        img: "https://imodern.ru/upload/iblock/d96/d962dd18dbc57458c16e4fac2933f2bf.jpg",
       },
       {
         id: 3,
-        name: "Стул2"
+        name: "Стул2",
+        description: "aaaaaaadaaaa",
+        img: "https://imodern.ru/upload/iblock/d96/d962dd18dbc57458c16e4fac2933f2bf.jpg",
       },
       {
         id: 4,
-        name: "Стул3"
+        name: "Стул3",
+        description: "aaaaaafaaaaa",
+        img: "https://imodern.ru/upload/iblock/d96/d962dd18dbc57458c16e4fac2933f2bf.jpg",
       },
       {
         id: 5,
-        name: "Стул4"
+        name: "Стул4",
+        description: "aaaaaaaaaaa",
+        img: "https://imodern.ru/upload/iblock/d96/d962dd18dbc57458c16e4fac2933f2bf.jpg",
       },
       {
         id: 6,
-        name: "Стул5"
+        name: "Стул5",
+        description: "aaaaeaaaaaaa",
+        img: "https://imodern.ru/upload/iblock/d96/d962dd18dbc57458c16e4fac2933f2bf.jpg",
       },
       {
         id: 7,
-        name: "Стул6"
+        name: "Стул6",
+        description: "aqaaaaaaaaaa",
+        img: "https://imodern.ru/upload/iblock/d96/d962dd18dbc57458c16e4fac2933f2bf.jpg",
       },
-    ]
-  }
-]
+    ],
+  },
+];
 
 export default Vue.extend({
   name: "CatalogContainer",
@@ -47,11 +63,13 @@ export default Vue.extend({
   },
   components: {
     CatalogList,
+    SetOrder,
+    ItemDescription,
   },
   computed: {
     catalog() {
       const idx = items.findIndex((item) => item.category === this.category);
       return idx + 1 ? items[idx].items : [];
     },
-  }
+  },
 });

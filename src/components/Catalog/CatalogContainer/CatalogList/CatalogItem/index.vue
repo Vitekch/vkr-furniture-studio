@@ -7,11 +7,31 @@
     <v-card-text class="text-justify">
       {{ item.name }}
     </v-card-text>
-    <!-- <v-card-actions>
-      <v-btn elevation="1" rounded block x-small color="secondary">
+    <v-card-actions class="d-flex flex-column justify-center">
+      <v-btn
+        elevation="1"
+        rounded
+        block
+        x-small
+        class="text-none"
+        color="secondary"
+        @click="setDescribedItem"
+      >
         Подробнее...
       </v-btn>
-    </v-card-actions> -->
+      <v-btn
+        elevation="1"
+        rounded
+        dark
+        block
+        x-small
+        class="ma-0 mt-2 text-none"
+        color="analogous_2 darken-1"
+        @click="setOrderModel"
+      >
+        Заказать
+      </v-btn>
+    </v-card-actions>
   </v-card>
 </template>
 

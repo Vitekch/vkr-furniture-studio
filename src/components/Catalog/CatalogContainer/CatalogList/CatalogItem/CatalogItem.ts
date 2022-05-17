@@ -5,4 +5,14 @@ export default Vue.extend({
   props: {
     item: Object,
   },
+  methods: {
+    setOrderModel() {
+      this.$store.commit("setOrderModel", this.item.name);
+      this.$store.commit("setSetOrderModalVisible", true);
+    },
+    setDescribedItem() {
+      this.$store.commit("setDescribedItem", this.item);
+      this.$store.commit("setItemDescModalVisible", true);
+    },
+  },
 });

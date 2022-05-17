@@ -1,5 +1,5 @@
 <template>
-  <div style="height: 100%">
+  <div style="height: 100%" class="d-flex">
     <Sidebar />
     <CatalogContainer :category="category" />
   </div>

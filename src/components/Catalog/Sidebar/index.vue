@@ -1,15 +1,15 @@
 <template>
-  <v-navigation-drawer permanent absolute>
+  <v-navigation-drawer permanent>
     <v-treeview
       dense
       hoverable
       color="primary darken-2"
       v-model="tree"
-      :open="initiallyOpen"
       :items="items"
       activatable
-      item-key="name"
+      item-key="value"
       open-on-click
+      @update:active="changePath"
     >
       <template v-slot:prepend="{ item }">
         <v-icon>
