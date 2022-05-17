@@ -7,18 +7,21 @@
         <router-view />
       </transition>
     </v-main>
+    <Footer />
   </v-app>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import Header from "./components/Layout/Header/index.vue";
+import Footer from "./components/Layout/Footer/index.vue";
 import NavMobilePanel from "./components/Layout/Header/Nav/NavMobilePanel/index.vue";
 export default Vue.extend({
   name: "App",
   components: {
     Header,
     NavMobilePanel,
+    Footer,
   },
 });
 </script>
