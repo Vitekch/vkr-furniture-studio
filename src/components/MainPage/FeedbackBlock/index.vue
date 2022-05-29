@@ -9,11 +9,11 @@
           md="4"
           cols="12"
           v-for="(feedback) in feedbacks"
-          :key="feedback.username"
+          :key="feedback.id"
           class="d-flex justify-center"
         >
           <FeedbackItem
-            :username="feedback.username"
+            :username="feedback.name"
             :feedback="feedback.feedback"
           />
         </v-col>

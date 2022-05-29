@@ -11,7 +11,7 @@
             </v-row>
             <v-divider class="my-5"></v-divider>
             <v-row>
-              <v-col md="6" cols="12">
+              <v-col md="4" cols="12">
                 <v-text-field
                   required
                   v-model="name"
@@ -20,13 +20,23 @@
                 >
                 </v-text-field>
               </v-col>
-              <v-col md="6" cols="12">
+              <v-col md="4" cols="12">
                 <v-text-field
                   required
                   v-model="phone"
                   label="Номер телефона"
                   type="tel"
                   :rules="[...requiredRules, ...phoneRules]"
+                >
+                </v-text-field>
+              </v-col>
+              <v-col md="4" cols="12">
+                <v-text-field
+                  required
+                  v-model="email"
+                  label="Электронная почта"
+                  type="email"
+                  :rules="[...requiredRules, ...emailRules]"
                 >
                 </v-text-field>
               </v-col>

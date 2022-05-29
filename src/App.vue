@@ -7,6 +7,7 @@
         <router-view />
       </transition>
     </v-main>
+    <OkAlert />
     <Footer />
   </v-app>
 </template>
@@ -16,13 +17,15 @@ import Vue from 'vue';
 import Header from "./components/Layout/Header/index.vue";
 import Footer from "./components/Layout/Footer/index.vue";
 import NavMobilePanel from "./components/Layout/Header/Nav/NavMobilePanel/index.vue";
+import OkAlert from './components/Tooltips/OkAlert/index.vue';
 export default Vue.extend({
   name: "App",
   components: {
     Header,
     NavMobilePanel,
     Footer,
-  },
+    OkAlert
+},
 });
 </script>
 
@@ -34,6 +37,10 @@ export default Vue.extend({
   --main-dark: #212121;
 }
 
+.v-application--wrap {
+  width: 100vw;
+  max-width: 100vw !important;
+}
 .app {
   background-color: rgb(250, 250, 250);
 }

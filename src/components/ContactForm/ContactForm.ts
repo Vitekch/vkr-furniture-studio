@@ -6,7 +6,7 @@ export default Vue.extend({
     action: "question",
     name: "",
     email: "",
-    message: "",
+    feedback: "",
     requiredRules: [(v: string) => !!v || "Пожалуйста, заполните это поле"],
     emailRules: [
       (v: string) => /(\w)+@(\w)+\.(\w)/g.test(v) || "Некоректный E-mail",
@@ -19,7 +19,12 @@ export default Vue.extend({
     submitHandler() {
       const form = this.$refs.contactForm as any;
       if (form.validate()) {
-        console.log("its Ok");
+          this.$store.dispatch("sendFeedback", {
+            action: this.action,
+            name: this.name,
+            email: this.email,
+            feedback: this.feedback,
+          });
       }
     },
   },
