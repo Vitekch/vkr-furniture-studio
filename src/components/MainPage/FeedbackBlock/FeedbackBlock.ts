@@ -42,12 +42,18 @@ export default Vue.extend({
   data: () => ({
     page: 0,
     timer: 0,
+    feedbacksData: [],
   }),
   mounted() {
     this.timer = setInterval(() => {
       const nextIdx = this.page * 3 + 3;
       this.page = feedbacksData[nextIdx] ? this.page + 1 : 0;
     }, 10000);
+  },
+  created() {
+    this.$store.dispatch("getFeedback")
+      .then((data) => {console.log(data); this.feedbacksData = data})
+      .catch((err) => { console.log(err) });
   },
 	deactivated() {
     clearInterval(this.timer);
@@ -56,8 +62,8 @@ export default Vue.extend({
     feedbacks() {
       const pagedFeedbacks = [];
       for (let i = this.page * 3; i < this.page * 3 + 3; i++) {
-        if (feedbacksData[i]) {
-          pagedFeedbacks.push(feedbacksData[i]);
+        if (this.feedbacksData[i]) {
+          pagedFeedbacks.push(this.feedbacksData[i] as any);
         } else {
           break;
         }

@@ -60,7 +60,7 @@
             <v-textarea
               required
               outlined
-              v-model="message"
+              v-model="feedback"
               :rules="requiredRules"
             >
             </v-textarea>

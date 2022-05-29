@@ -5,9 +5,13 @@ export default Vue.extend({
   data: () => ({
     name: "",
     phone: "",
+    email: "",
     requiredRules: [(v: string) => !!v || "Пожалуйста, заполните это поле"],
     phoneRules: [
       (v: string) => /(\+\d+)|(\d+)/g.test(v) || "Некоректный номер телефона",
+    ],
+    emailRules: [
+      (v: string) => /(\w)+@(\w)+\.(\w)/g.test(v) || "Некоректный E-mail",
     ],
   }),
   computed: {
@@ -23,4 +27,17 @@ export default Vue.extend({
       return this.$store.state.orderModel;
     },
   },
+  methods: {
+    submitHandler() {
+      const form = this.$refs.contactForm as any;
+      if (form.validate()) {
+          this.$store.dispatch("setCatalogOrder", {
+            name: this.name,
+            email: this.email,
+            phone: this.phone,
+          });
+      }
+      
+    }
+  }
 });
