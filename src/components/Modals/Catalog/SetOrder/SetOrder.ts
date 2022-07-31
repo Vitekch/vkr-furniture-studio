@@ -24,7 +24,7 @@ export default Vue.extend({
       },
     },
     model() {
-      return this.$store.state.orderModel;
+      return this.$store.state.orderModel.name;
     },
   },
   methods: {

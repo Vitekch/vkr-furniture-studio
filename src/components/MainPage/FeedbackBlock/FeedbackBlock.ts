@@ -1,38 +1,6 @@
 import Vue from "vue";
 import FeedbackItem from "./FeedbackItem/index.vue";
 
-const feedbacksData = [
-  {
-    username: "Steve Huis",
-    feedback:
-      "Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек в Фидбек",
-  },
-  {
-    username: "Steve Huis1",
-    feedback:
-      "Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек в Фидбек",
-  },
-  {
-    username: "Steve Huis2",
-    feedback:
-      "Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек в Фидбек",
-  },
-  {
-    username: "Steve Huis3",
-    feedback:
-      "Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек в Фидбек",
-  },
-  {
-    username: "Steve Huis5",
-    feedback:
-      "Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек в Фидбек",
-  },
-  {
-    username: "Steve Huis6",
-    feedback:
-      "Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек Фидбек в Фидбек",
-  },
-];
 
 export default Vue.extend({
   name: "FeedbackBlock",
@@ -47,7 +15,7 @@ export default Vue.extend({
   mounted() {
     this.timer = setInterval(() => {
       const nextIdx = this.page * 3 + 3;
-      this.page = feedbacksData[nextIdx] ? this.page + 1 : 0;
+      this.page = this.feedbacksData[nextIdx] ? this.page + 1 : 0;
     }, 10000);
   },
   created() {

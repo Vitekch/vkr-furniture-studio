@@ -9,7 +9,9 @@ export interface IState {
   isMobMenuVisible: boolean;
   isSetOrderModalVisible: boolean;
   isItemDescModalVisible: boolean;
+  isLoading: boolean;
   describedItem: ICatalogItem | null;
-  orderModel: string;
-  alert: IAlert
+  orderModel: ICatalogItem | null;
+  alert: IAlert,
+  adminData: any[],
 }

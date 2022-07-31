@@ -1,0 +1,23 @@
+.loader {
+    &__overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fcfcfc;
+    }
+
+    &__gif {
+        border-radius: 75% 25% 51% 49% / 47% 17% 83% 53% ;
+    }
+
+    &__text {
+
+    }
+}

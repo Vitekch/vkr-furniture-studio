@@ -2,6 +2,9 @@
   <div>
     <HeadingBlock />
     <ControlsBlock />
+    <v-divider></v-divider>
+    <AboutUs />
+    <v-divider></v-divider>
     <FeedbackBlock />
   </div>
 </template>

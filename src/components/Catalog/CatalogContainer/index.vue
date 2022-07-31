@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-card class="pa-5">
+    <v-card class="pa-5 catalog_container">
       <CatalogList :items="catalog" />
     </v-card>
     <SetOrder />

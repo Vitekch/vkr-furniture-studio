@@ -11,11 +11,6 @@ const items = [
     text: "Индивидуальный дизайн-проект",
     to: "/services/original-design",
   },
-  {
-    icon: "mdi-briefcase-check",
-    text: "Дизайн-проекты типовых квартир",
-    to: "/services/design-projects",
-  },
 ];
 
 export default Vue.extend({

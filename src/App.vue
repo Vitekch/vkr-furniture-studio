@@ -7,6 +7,7 @@
         <router-view />
       </transition>
     </v-main>
+    <Loader />
     <OkAlert />
     <Footer />
   </v-app>
@@ -18,13 +19,15 @@ import Header from "./components/Layout/Header/index.vue";
 import Footer from "./components/Layout/Footer/index.vue";
 import NavMobilePanel from "./components/Layout/Header/Nav/NavMobilePanel/index.vue";
 import OkAlert from './components/Tooltips/OkAlert/index.vue';
+import Loader from './components/Layout/Loader/index.vue';
 export default Vue.extend({
   name: "App",
   components: {
     Header,
     NavMobilePanel,
     Footer,
-    OkAlert
+    OkAlert,
+    Loader
 },
 });
 </script>

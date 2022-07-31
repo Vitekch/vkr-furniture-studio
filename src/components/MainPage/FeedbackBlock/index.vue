@@ -1,6 +1,6 @@
 <template>
-  <v-container class="feedback__container">
-    <h1 class="mb-3">Отзывы клиентов</h1>
+  <v-container class="feedback__container my-10">
+    <h1 class="text-h1 mb-10 d-flex justify-center">Отзывы клиентов</h1>
       <transition-group
         name="slow-fade"
         tag="v-row"

@@ -12,17 +12,6 @@
       <v-btn
         elevation="1"
         rounded
-        block
-        x-small
-        class="text-none"
-        color="secondary"
-        @click="setDescribedItem"
-      >
-        Подробнее...
-      </v-btn>
-      <v-btn
-        elevation="1"
-        rounded
         dark
         block
         x-small
