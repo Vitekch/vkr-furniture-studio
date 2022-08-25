@@ -1,8 +1,8 @@
 <template>
   <v-card class="feedback">
-    <p class="feedback--text">{{ feedback }}</p>
-    <v-divider></v-divider>
     <h3 class="feedback--username">{{ username }}</h3>
+    <v-divider></v-divider>
+    <p class="feedback--text">{{ feedback }}</p>
   </v-card>
 </template>
 

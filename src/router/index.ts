@@ -4,6 +4,7 @@ import Home from "../views/HomeView/index.vue";
 import ContactFormView from "../views/ContactFormView/index.vue";
 import ServicesView from "@/views/ServicesView/index.vue";
 import CatalogView from "@/views/CatalogView/index.vue";
+import AdminView from "@/views/AdminView/index.vue";
 
 Vue.use(VueRouter);
 
@@ -30,6 +31,11 @@ const routes: Array<RouteConfig> = [
     component: CatalogView,
     props: true,
   },
+  {
+    path: "/admin",
+    name: "Admin",
+    component: AdminView,
+  }
 ];
 
 const router = new VueRouter({

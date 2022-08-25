@@ -2,7 +2,7 @@
   <v-snackbar
   dark
       v-model="alert.isVisible"
-      :color="alert.status === 'Success' ? 'primary' : 'error'"
+      :color="alert.status === 'Success' ? 'primary darken-2' : 'error'"
       
     >
     <div class="d-flex justify-center">

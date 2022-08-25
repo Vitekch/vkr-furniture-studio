@@ -7,7 +7,7 @@ export default Vue.extend({
   },
   methods: {
     setOrderModel() {
-      this.$store.commit("setOrderModel", this.item.name);
+      this.$store.commit("setOrderModel", this.item);
       this.$store.commit("setSetOrderModalVisible", true);
     },
     setDescribedItem() {

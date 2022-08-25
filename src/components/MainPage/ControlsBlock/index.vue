@@ -11,13 +11,6 @@
         <div class="underline"></div>
       </a>
       <div class="mx-15"></div>
-      <!-- <a
-        class="control__link mx-15"
-        @click="changePath('/services/design-projects')"
-      >
-        Готовые дизайн-проекты
-        <div class="underline"></div>
-      </a> -->
       <a class="control__link" @click="changePath('/catalog/living-room')">
         Каталог
         <div class="underline"></div>

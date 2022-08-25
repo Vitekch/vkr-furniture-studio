@@ -1,5 +1,5 @@
 <template>
-  <v-container class="d-flex justify-center pt-10">
+  <v-container class="d-flex justify-center align-center pt-10 contact-form_container">
     <ContactForm />
   </v-container>
 </template>

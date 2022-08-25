@@ -1,13 +1,11 @@
 <template>
-  <v-row v-if="items.length">
+  <v-row v-if="items.length" style="width: 100%">
     <v-col v-for="item of items" :key="item.id" cols="12" lg="2" md="3" sm="4">
       <CatalogItem :item="item" />
     </v-col>
   </v-row>
   <v-row v-else>
-    <v-col class="d-flex justify-center">
-      <h3 class="text-h3">Загляните сюда позже...</h3>
-    </v-col>
+    <NotFound />
   </v-row>
 </template>
 
